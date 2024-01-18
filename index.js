@@ -37,7 +37,7 @@ function getCovidData(getCountry) {
         changeData(activeCases, newCases, recoveredCases, totalCases, totalDeath, totalTests);
     })
    .catch(err => {
-        console.error(err.message);
+        console.error(alert('Country not found!'));
     });
 }
 
